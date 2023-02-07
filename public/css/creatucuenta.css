@@ -9,10 +9,11 @@
  .form-container {
      background-color: rgb(204, 202, 202);
      display: flex;
-     justify-content: center;
+     justify-content:center;
      align-items:center;
      margin: 50px auto;
-     border: 1px solid black;   
+     border: 1px solid black;
+     height: 800px;
      width: 310px;
      border-radius: 10px;
      background-color: var(--amarillo);
@@ -49,7 +50,6 @@
  .divs-contenedores-perfil input {
      margin: 10px 30px;
  }
-
 
  .divs-contenedores-intereses input {
      width: 25%;
