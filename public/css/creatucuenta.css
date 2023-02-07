@@ -10,11 +10,11 @@
      background-color: rgb(204, 202, 202);
      display: flex;
      justify-content: center;
- 
+     align-items:center;
      margin: 50px auto;
      border: 1px solid black;
    
-     width: 70vw;
+     width: 310px;
      border-radius: 10px;
      background-color: var(--amarillo);
      box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
