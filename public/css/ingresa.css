@@ -1,0 +1,53 @@
+@import url(/styles.css);
+
+body div.form-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--amarillo);
+}
+
+div.form-container h2 {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body div.form-container form div.input-container input {
+    width: 260px;
+    height: 40px;
+    margin: 20px 0 50px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+input ::placeholder {
+    margin-left: 555px;
+}
+
+body div.form-container form div.button-container button.btn {
+    width: 260px;
+    height: 40px;
+    background-color: var(--celeste);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px 0 30px;
+}
+
+button.btn:hover {
+    transform: scale(1.01);
+}
+
+@media (min-width: 768px) {
+    body div.form-container form div.input-container input {
+        width: 708px;
+    }
+
+    body div.form-container form div.button-container button.btn {
+        width: 708px;
+    }
+}

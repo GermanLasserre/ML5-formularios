@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/*Variables*/
+:root {
+    /*variables de colores */
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+
+    /*fuentes*/
+    --fuente: 'Roboto', sans-serif;
+
+    /*tamaños tipograficos*/
+    --parrafos: 12px;
+    --titulos: 24px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripciones: 16px;
+}
+
+/* estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: var(--parrafos);
+}
+
+body {
+    background-color: var(--gris-claro);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Header*/
+header {
+    background-color: var(--amarillo);
+    padding-top: 25px;
+    padding: 25px 0;
+}
+
+.logoYbusqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+header div.logo img {
+    width: 50%;
+    margin-left: 25px;
+}
+
+header div.busqueda {
+    width: 50%;
+    height: 2rem;
+    display: flex;
+}
+
+.cuotas {
+    font-size: 0.8rem;
+}
+
+header section button {
+    position: relative;
+    right: 1rem;
+    width: 2rem;
+}
+
+header p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header nav.listas {
+    align-items: center;
+}
+
+
+header nav ul li a {
+    font-size: var(--parrafos);
+}
+
+header div.burger-menu {
+    background-color: var(--celeste);
+    border-radius: 6px;
+    color: white;
+    width: 2rem;
+    height: 2.1rem;
+    padding: 8px;
+    margin: 25px auto 0;
+}
+
+
+
+/* Productos */
+
+main.home__productos {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+main section.hseccion__productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main section h4.seccion__productos--titulo {
+    text-align: center;
+    margin: 15px 0px 5px 0px;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+main section article.seccion__productos--tarjeta {
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: white;
+    position: relative;
+}
+
+main section article .seccion__productos--tarjeta-descripcion {
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+}
+
+main section article i.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    position: absolute;
+    right: 2rem;
+    bottom: 3rem;
+    color: var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.precioYdescuento {
+    display: flex;
+    margin: 2px 0px;
+}
+
+p.price {
+    margin-right: 5px;
+    width: 30%;
+}
+
+p.off {
+    color: var(--verde);
+    width: 70%;
+}
+
+/*Footer*/
+
+footer {
+    padding: 50px 10px 10px;
+    background-color: white;
+    width: 100%;
+}
+
+footer article {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer article i {
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+footer span {
+    font-size: var(--parrafos);
+}
+
+
+/*MOBILE*/
+
+@media (max-width:359px) {
+
+    header div.logo img {
+        min-width: 70%;
+    }
+
+    .listaSuperior {
+        display: none;
+    }
+
+    .listaInferior {
+        display: none;
+    }
+
+    main section article .seccion__productos--tarjeta-descripcion {
+        display: none;
+    }
+}
+
+/*TABLET*/
+
+@media(min-width:360px) and (max-width:768px) {
+
+
+    header div.logo img {
+        min-width: 71%;
+        max-width: 80%;
+    }
+
+    header nav.listas {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .listaSuperior {
+        display: flex;
+    }
+
+    .listaInferior {
+        display: flex;
+    }
+
+    header nav ul li a {
+        margin: 0 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .upheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        margin-left: 15px;
+    }
+
+    .cuotas {
+        font-size: 10px;
+    }
+
+    .listas {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    main section h4.seccion__productos--titulo {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    main section article.seccion__productos--tarjeta {
+        box-shadow: -5px 5px 10px var(--gris-oscuro);
+        max-width: 50%;
+        margin-bottom: 15px;
+        flex-direction: row;
+    }
+
+    .smain section article .seccion__productos--tarjeta-descripcion {
+        display: block;
+        border-top: 3px solid var(--gris-claro);
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width:769px) {
+
+    header div.logo img {
+        min-width: 81%;
+        max-width: 85%;
+    }
+
+    header nav.listas {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .listaSuperior {
+        display: flex;
+    }
+
+    .listaInferior {
+        display: flex;
+    }
+
+    header nav ul li a {
+        margin: 0 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    main section h4.seccion__productos--titulo {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    main section article.seccion__productos--tarjeta {
+        box-shadow: -5px 5px 10px var(--gris-oscuro);
+        max-width: 25%;
+        margin-bottom: 15px;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,83 @@
+ @import url(/styles.css);
+
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+ .form-container {
+     background-color: rgb(204, 202, 202);
+     display: flex;
+     justify-content: center;
+ 
+     margin: 50px auto;
+     border: 1px solid black;
+   
+     width: 70vw;
+     border-radius: 10px;
+     background-color: var(--amarillo);
+     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
+ }
+
+ .divs-contenedores {
+     display: flex;
+     flex-direction: column;
+     margin: 45px 0 20px 0;
+ }
+
+ .divs-contenedores input {
+     height: 30px;
+     margin: 0px 5px;
+     border: 0px;
+     border-radius: 5px;
+     box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+ }
+
+ .divs-contenedores label {
+     margin-bottom: 10px;
+     font-weight: bold;
+     margin: 0 auto;
+ }
+
+ .divs-contenedores-perfil p.titulo {
+     font-weight: bold;
+     font-size: 15px;
+     margin-bottom: 10px;
+     text-align: center;
+ }
+
+ .divs-contenedores-perfil input {
+     margin: 10px 30px;
+ }
+
+
+ .divs-contenedores-intereses input {
+     width: 25%;
+     margin-bottom: 20px;
+ }
+
+ .divs-contenedores-intereses .titulo-interes {
+     margin: 10px 0 10px 0;
+     font-weight: bold;
+     text-align: center;
+ }
+
+ .divs-contenedores button.btn {
+     height: 30px;
+     margin: 0px 7px;
+     border: 0px;
+     border-radius: 5px;
+     font-size: 15px;
+     background-color: var(--celeste);
+     color: white;
+     box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+ }
+
+ .divs-contenedores button.btn:hover {
+     transform: scale(1.01);
+ }
+
+ div.divs-contenedores span {
+     display: none;
+ }

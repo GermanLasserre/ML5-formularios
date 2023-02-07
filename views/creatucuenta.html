@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/creatucuenta.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    <header>
+        <section class="upheader">
+            <article class="logoYbusqueda">
+                <div class="logo">
+                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Logo MercadoLiebre"></a>
+                </div>
+                <div class="busqueda">
+                    <input type="search" placeholder="Buscar productos, marcas...">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </article>
+            <p class="cuotas"><i class="fa-solid fa-hand-holding-dollar"></i>¡Comprá en cuotas y sin tarjeta de crédito!
+            </p>
+        </section>
+
+        <nav class="listas">
+            <ul class="listaSuperior">
+                <li><a href="ofertas">Ofertas</a></li>
+                <li><a href="tiendasoficiales">Tiendas oficiales</a></li>
+                <li><a href="vender">Vender</a></li>
+                <li><a href="ayuda">Ayuda</a></li>
+            </ul>
+            <ul class="listaInferior">
+                <li><a href="creatucuenta">Creá tu cuenta <i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="ingresa">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="miscompras">Mis compras <i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+
+    <div class="form-container">
+        <form action="/crear-producto" method="">
+            <div class="divs-contenedores">
+                <label>Ingresá tus nombres</label>
+                <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+            </div>
+            <div class="divs-contenedores">
+                <label>Elegí tu numbre de usuario</label>
+                <input type="text" name="precio" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="divs-contenedores">
+                <label>Confirmá tu e-mail</label>
+                <input type="text" name="oferta" placeholder="E-mail" required>
+            </div>
+            <div class="divs-contenedores">
+                <label>Fecha de nacimiento</label>
+                <input type="date" required>
+            </div>
+            <div class="divs-contenedores">
+                <label>Tu domicilio</label>
+                <input type="text" placeholder="Domicilio" required>
+            </div>
+            <br>
+            <div class="divs-contenedores-perfil">
+                <p class="titulo">Perfil de usuario</p>
+                <input type="radio" required name="usuario" id="r1" value="yes"><label for="r1">Comprador</label>
+                <input type="radio" required name="usuario" id="r2" value="no"><label for="r2">Vendedor</label>
+            </div><br>
+            <div class="divs-contenedores-intereses">
+                <div class="titulo-interes"><label>Interes</label></div>
+                <input type="checkbox"><label>Electro</label>
+                <input type="checkbox"> <label>Moda</label>
+                <input type="checkbox"> <label>Hogar</label>
+                <input type="checkbox"><label>Juguetería</label>
+                <input type="checkbox"><label>Vida Sana</label>
+            </div>
+            <div class="divs-contenedores">
+                <span class="error-message">Credenciales inválidas</span>
+                <button type="submit" class="btn">Registrarme</button>
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        <article class="seccion__productos--tarjeta">
+            <i class="fa-solid fa-credit-card"></i>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre
+                es seguro!</p>
+        </article>
+        <article class="seccion__productos--tarjeta">
+            <i class="fa-solid fa-gift"></i>
+            <h4>Envío gratis desde $ 2.500</h4>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+        </article>
+        <article class="seccion__productos--tarjeta">
+            <i class="fa-solid fa-user-shield"></i>
+            <h4>Seguridad, de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </article>
+        <span>
+            German Lasserre 2023
+        </span>
+    </footer>
+
+
+</body>
+
+</html>
