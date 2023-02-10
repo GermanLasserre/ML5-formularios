@@ -9,12 +9,12 @@
  .form-container {
      background-color: rgb(204, 202, 202);
      display: flex;
-     justify-content:center;
-     align-items:center;
+     justify-content: center;
+     align-items: center;
      margin: 50px auto;
      border: 1px solid black;
-     height: 800px;
-     width: 310px;
+     height: 100%;
+     width: 350px;
      border-radius: 10px;
      background-color: var(--amarillo);
      box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -80,3 +80,8 @@
  div.divs-contenedores span {
      display: none;
  }
+
+ div.divs-contenedores a {
+    color: white;;
+}
+ 

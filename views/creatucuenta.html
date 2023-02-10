@@ -12,8 +12,6 @@
 </head>
 
 <body>
-
-
     <header>
         <section class="upheader">
             <article class="logoYbusqueda">
@@ -30,7 +28,6 @@
             <p class="cuotas"><i class="fa-solid fa-hand-holding-dollar"></i>¡Comprá en cuotas y sin tarjeta de crédito!
             </p>
         </section>
-
         <nav class="listas">
             <ul class="listaSuperior">
                 <li><a href="ofertas">Ofertas</a></li>
@@ -44,26 +41,28 @@
                 <li><a href="miscompras">Mis compras <i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
-
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>
-
     </header>
 
-    <div class="form-container">      
+    <div class="form-container">
         <form action="/crear-producto" method="">
             <div class="divs-contenedores">
                 <label>Ingresá tus nombres</label>
-                <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+                <input type="text" name="nombres" placeholder=" Nombre y Apellido" required>
             </div>
             <div class="divs-contenedores">
                 <label>Elegí tu numbre de usuario</label>
-                <input type="text" name="precio" placeholder="Nombre de usuario" required>
+                <input type="text" name="username" placeholder=" Nombre de usuario" required>
+            </div>
+            <div class="divs-contenedores">
+                <label>Ingresa tu e-mail</label>
+                <input type="text" name="email" placeholder=" E-mail" required>
             </div>
             <div class="divs-contenedores">
                 <label>Confirmá tu e-mail</label>
-                <input type="text" name="oferta" placeholder="E-mail" required>
+                <input type="text" name="email" placeholder=" Confirma tu E-mail" required>
             </div>
             <div class="divs-contenedores">
                 <label>Fecha de nacimiento</label>
@@ -71,7 +70,7 @@
             </div>
             <div class="divs-contenedores">
                 <label>Tu domicilio</label>
-                <input type="text" placeholder="Domicilio" required>
+                <input type="text" name="domicilio" placeholder=" Domicilio" required>
             </div>
             <br>
             <div class="divs-contenedores-perfil">
@@ -88,9 +87,30 @@
                 <input type="checkbox"><label>Vida Sana</label>
             </div>
             <div class="divs-contenedores">
-                <span class="error-message">Credenciales inválidas</span>
-                <button type="submit" class="btn">Registrarme</button>
+                <label>Foto de usuario</label>
+                <input type="file" name="foto" required>
+                <span class="feedback">No cargó ninguna foto de perfil</span>
             </div>
+            <div class="divs-contenedores">
+                <input type="text" name="contraseña" class="control" placeholder="Contraseña" required>
+                <span class="feedback">Contraseña demasiado corta</span>
+            </div>
+            <div class="divs-contenedores">
+                <input type="text" name="confirmarContraseña" class="control" placeholder="Confirme contraseña"
+                    required>
+                <span class="feedback">No coincide con la contraseña</span>
+            </div>
+            <div class="divs-contenedores">
+                <button type="submit" class="btn"><a href="http://localhost:3040/">Registrarme</a></button> <br>
+                <button type="reset" class="btn">Borrar</button>
+            </div>
+
+
+
+
+
+
+
         </form>
     </div>
 
@@ -118,8 +138,6 @@
             German Lasserre 2023
         </span>
     </footer>
-
-
 </body>
 
 </html>
